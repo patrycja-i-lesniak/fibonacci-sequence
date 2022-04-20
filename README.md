@@ -10,3 +10,5 @@ Create: 20.04.2022
 
 Application written as part of the vanila javascript exercises.
 It allows you to display the fibonacci sequence after entering its length in an input.
+
+The app displays a string with a maximum length of 100.
