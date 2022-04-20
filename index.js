@@ -11,7 +11,10 @@ let valueFromInput = input.addEventListener('input', function() {
 
 function fibonacciSequence(n) {
 	let fibonacciArray = [];
-
+if(n>100) {
+	throw new Error('max 100');
+	print('max 100')
+}
 	for (let i = 0; i < n; i++) {
 		i == 0 || i == 1
 			? (fibonacciArray[i] = i)
