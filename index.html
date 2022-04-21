@@ -6,25 +6,32 @@
     <link rel='stylesheet' href='style.css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="box">
     <div>
-        <label for='input'>
+        <header for='input'>
         Fibonacci Sequence
-        </label>
+        </header>
+        <img src="./image.png"/>
         <p class="description">The Fibonacci sequence is a series of numbers in which each number is the sum of the two that precede it.</p>
-        <input name='length' value='fibbonacciSequenceLength' class='input' type='number' placeholder='only numbers' max="100"/>
+        <input name='input' value='fibbonacciSequenceLength' class='input' type='number' placeholder='only numbers, max 1000' max="1000"/>
+        <!-- <p class="validation hidden" >
+incorrect value, enter a number from 1 to 1000</p> -->
         <p class="instruction"> Enter the length of the fibonacci string you want to display</p>
     </div>
     
 
 <div class="paragraphBox">
-    <p class="result">your fibonacci sequence</p> 
-    <p id="paragraph" class="paragraph"></p> 
+    <p class="paragraph">your fibonacci sequence</p> 
+    <p id="result" class="result"></p> 
 </div>
-</div>   
+
+</div> 
+<footer>
+    <p class="footerParagraph">© 2022 | Coded by Patrycja Leśniak</p>
+</footer>  
 
     <script defer src='./index.js'></script>
 
