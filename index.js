@@ -1,8 +1,9 @@
 const input = document.querySelector('input');
-const paragraph = document.getElementById('paragraph');
+const result = document.getElementById('result');
+const valid = document.getElementById('validation');
 
 let valueFromInput = input.addEventListener('input', function() {
-	let output = (document.getElementById('paragraph').textContent = `\n${fibonacciSequence(
+	let output = (document.getElementById('result').textContent = `\n${fibonacciSequence(
 		input.value
 	).join(', \n')}`);
 
@@ -11,9 +12,10 @@ let valueFromInput = input.addEventListener('input', function() {
 
 function fibonacciSequence(n) {
 	let fibonacciArray = [];
-if(n>100) {
+if(n>=1000) {
+	// valid.classList.remove('hidden')
 	throw new Error('max 100');
-	print('max 100')
+	
 }
 	for (let i = 0; i < n; i++) {
 		i == 0 || i == 1
@@ -22,6 +24,7 @@ if(n>100) {
 	}
 	return fibonacciArray;
 }
+
 
 
 
