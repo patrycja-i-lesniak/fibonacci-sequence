@@ -2,12 +2,11 @@ const input = document.querySelector('.input');
 const errorMessage = document.querySelector('.errorMessage');
 const result = document.getElementById('result');
 const fibSequence = document.querySelector('.fibSequence');
+let output = document.getElementById('result').textContent;
 
 let valueFromInput = input.addEventListener('input', function() {
-	let output = (document.getElementById('result').textContent = `${fibonacciSequence(
-		input.value
-	).join(', \n')}`);
-	console.log(output);
+	output = `${fibonacciSequence(input.value).join(', \n')}`;
+	console.log( output);
 });
 
 function fibonacciSequence(n) {
