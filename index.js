@@ -12,7 +12,7 @@ let valueFromInput = input.addEventListener('input', function() {
 
 function fibonacciSequence(n) {
 	let fibonacciArray = [];
-	if (n >= 1000) {
+	if (n > 1000) {
 		errorMessage.classList.remove('hidden');
 		fibSequence.classList.add('hidden');
 		result.classList.add('hidden');
