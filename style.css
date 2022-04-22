@@ -10,7 +10,7 @@ header {
     color: #27363B;
     text-transform: upperCase;
     font-weight: 700;
-  margin-bottom: 30px;
+    margin-bottom: 30px;
     /* text-shadow: -1.5px 0 #27363B, 0 1.5px #27363B, 1px 0 #27363B, 0 -1px #27363B; */
 }
 
@@ -79,9 +79,7 @@ footer {
     width: 100vw;
     position: fixed;
     bottom: 0;
-    z-index: 999;
     background-color: #27363B;
-
 }
 
 .footerParagraph {
@@ -90,4 +88,14 @@ footer {
 
 img {
     max-width: 400px
+}
+
+.hidden {
+    display: none;
+}
+
+.errorMessage {
+    color: crimson;
+    font-size: 14px;
+    margin: 0
 }
