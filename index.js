@@ -1,13 +1,14 @@
 const input = document.querySelector('.input');
-const result = document.getElementById('result');
 const errorMessage = document.querySelector('.errorMessage');
+const result = document.getElementById('result');
 const fibSequence = document.querySelector('.fibSequence');
 
 let valueFromInput = input.addEventListener('input', function() {
-	let output = (document.getElementById('result').textContent = `\n${fibonacciSequence(input.value).join(', \n')}`);
+	let output = (document.getElementById('result').textContent = `${fibonacciSequence(
+		input.value
+	).join(', \n')}`);
 	console.log(output);
 });
-
 
 function fibonacciSequence(n) {
 	let fibonacciArray = [];
@@ -19,6 +20,7 @@ function fibonacciSequence(n) {
 	}
 	errorMessage.classList.add('hidden');
 	fibSequence.classList.remove('hidden');
+	result.classList.remove('hidden');
 
 	for (let i = 0; i < n; i++) {
 		i == 0 || i == 1
