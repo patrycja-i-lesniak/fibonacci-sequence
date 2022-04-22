@@ -1,22 +1,25 @@
-const input = document.querySelector('input');
+const input = document.querySelector('.input');
 const result = document.getElementById('result');
-const valid = document.getElementById('validation');
+const errorMessage = document.querySelector('.errorMessage');
+const fibSequence = document.querySelector('.fibSequence');
 
 let valueFromInput = input.addEventListener('input', function() {
-	let output = (document.getElementById('result').textContent = `\n${fibonacciSequence(
-		input.value
-	).join(', \n')}`);
-
+	let output = (document.getElementById('result').textContent = `\n${fibonacciSequence(input.value).join(', \n')}`);
 	console.log(output);
 });
 
+
 function fibonacciSequence(n) {
 	let fibonacciArray = [];
-if(n>=1000) {
-	// valid.classList.remove('hidden')
-	throw new Error('max 100');
-	
-}
+	if (n >= 1000) {
+		errorMessage.classList.remove('hidden');
+		fibSequence.classList.add('hidden');
+		result.classList.add('hidden');
+		throw new Error('max 1000');
+	}
+	errorMessage.classList.add('hidden');
+	fibSequence.classList.remove('hidden');
+
 	for (let i = 0; i < n; i++) {
 		i == 0 || i == 1
 			? (fibonacciArray[i] = i)
@@ -24,11 +27,6 @@ if(n>=1000) {
 	}
 	return fibonacciArray;
 }
-
-
-
-
-
 
 // const fibonacciSequence = (n) =>
 // 	Array(n).fill({length: n})
