@@ -12,31 +12,26 @@
     <div class="box">
     <div>
         <header for='input'>
-        Fibonacci Sequence
+            Fibonacci Sequence
         </header>
         <img src="./image.png"/>
         <p class="description">The Fibonacci sequence is a series of numbers in which each number is the sum of the two that precede it.</p>
-        <input name='input' value='fibbonacciSequenceLength' class='input' type='number' placeholder='only numbers, max 1000' max="1000"/>
-            <div>
-                <p class='errorMessage hidden'>
+        <input name='input' value='fibbonacciSequenceLength' class='input' type='number' placeholder='only numbers' max="1000"/>
+        <div>
+            <p class='errorMessage hidden'>
                 Incorrect value. Please enter a number from 1 to 1000
-                </p>
-            </div>
-        <p class="instruction"> Enter the length of the fibonacci string you want to display</p>
+            </p>
+        </div>
+        <p class="instruction"> Enter the length of the fibonacci string you want to display. Max. length 1000.</p>
     </div>
-
-<div class="paragraphBox">
-    <p class="paragraph fibSequence hidden">your fibonacci sequence</p>
-    <p id="result" class="result"></p>
+    <div class="paragraphBox">
+        <p class="paragraph fibSequence hidden">your fibonacci sequence</p>
+        <p id="result" class="result"></p>
+    </div>
 </div>
-
-
-</div> 
 <footer>
     <p class="footerParagraph">© 2022 | Coded by Patrycja Leśniak</p>
-</footer>  
-
+</footer>
     <script defer src='./index.js'></script>
-
 </body>
 </html>
