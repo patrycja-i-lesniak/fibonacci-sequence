@@ -2,10 +2,10 @@ const input = document.querySelector('.input');
 const errorMessage = document.querySelector('.errorMessage');
 const result = document.getElementById('result');
 const fibSequence = document.querySelector('.fibSequence');
-let output = document.getElementById('result').textContent;
+
 
 let valueFromInput = input.addEventListener('input', function() {
-	output = `${fibonacciSequence(input.value).join(', \n')}`;
+	let output = document.getElementById('result').textContent = `${fibonacciSequence(input.value).join(', \n')}`;
 	console.log( output);
 });
 
@@ -28,6 +28,23 @@ function fibonacciSequence(n) {
 	}
 	return fibonacciArray;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // const fibonacciSequence = (n) =>
 // 	Array(n).fill({length: n})
